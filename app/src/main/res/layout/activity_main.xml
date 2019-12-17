@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/ibBtnBrightness"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/light_brightness" />
+
+        <ImageButton
+            android:id="@+id/ibBtnColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/light_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutControls"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/seekArcProgress"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="56sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <com.dipz.projects.circularseekbar.CircularSeekbar
+                android:id="@+id/circularSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:arcWidth="8dp"
+                app:isBrightnessColor="false"
+                app:roundEdges="true"
+                app:touchInside="false" />
+
+            <ImageView
+                android:id="@+id/ivOnOffButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_power" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

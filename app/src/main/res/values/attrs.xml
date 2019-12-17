@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularSeekbar">
+        <attr name="seekBack" format="reference" />
+        <attr name="thumbOffset" format="dimension" />
+        <attr name="max" format="integer" />
+        <!--<attr name="rotation" format="integer" />-->
+        <attr name="startAngle" format="integer" />
+        <attr name="sweepAngle" format="integer" />
+        <attr name="tickProgressColor" format="color" />
+        <attr name="ticksBetweenLabel" />
+
+        <attr name="touchOutside" format="boolean" />
+        <attr name="touchInside" format="boolean" />
+        <attr name="thumb" format="reference" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="clockwise" format="boolean" />
+        <attr name="tickOffset" format="dimension" />
+        <attr name="tickLength" format="dimension" />
+        <attr name="tickIntervals" format="integer" />
+        <attr name="arcEnabled" format="boolean" />
+        <attr name="roundEdges" format="boolean" />
+        <attr name="sectorColor" format="color" />
+        <attr name="innerCircleColor" format="color" />
+        <attr name="outerCircleColor" format="color" />
+        <attr name="isBrightnessColor" format="boolean" />
+        <attr name="arcColor" format="color" />
+        <attr name="tickColor" format="color" />
+        <attr name="tickWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekArcTheme">
+        <attr name="seekArcStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="ticksBetweenLabel" format="enum">
+        <enum name="zero" value="0" />
+        <enum name="one" value="1" />
+        <enum name="two" value="2" />
+        <enum name="three" value="3" />
+        <enum name="four" value="4" />
+    </attr>
+
+    <!--<declare-styleable name="circularSeekbar">
+        <attr name="isBrightnessColor" format="boolean" />
+    </declare-styleable>-->
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="sector_color">#FAB755</color>
+
+    <color name="background_color">#FFFFFF</color>
+    <color name="text_color">#010101</color>
+
+    <color name="font_color">#231F20</color>
+    <color name="dig_font_color">#929497</color>
+    <color name="outer_color">#BEBFC1</color>
+    <color name="inner_color">#949597</color>
+    <color name="tick_progress_color">#A89D8B</color>
+    <color name="progress">#6F6F6D</color>
+    <color name="middle_start_color">#FEBF60</color>
+    <color name="middle_end_color">#FFFEFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>
